@@ -10,4 +10,8 @@ app.post('/api/v1/tasks', (req, res) => {
   res.send('タスクを新規作成しました');
 });
 
+app.get('/api/v1/tasks:id', (req, res) => {
+  res.send('ある特定のタスクを取得しました');
+});
+
 app.listen(PORT, console.log('サーバーが起動しました'));
