@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NodejsとMongoDBを使ったTodoアプリ</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <form class="task-form">
@@ -20,5 +24,27 @@
         <button type="submit" class="btn submit-btn">送信</button>
       </div>
     </form>
+
+    <section class="tasks-container">
+      <div class="tasks">
+        <!-- タスク仮置き -->
+        <div class="single-task">
+          <h5>
+            <span><i class="far fa-check-circle"></i></span>
+            Todoタスク
+          </h5>
+          <div class="task-links">
+            <!-- 編集リンク -->
+            <a href="#" class="edit-link">
+              <i class="fas fa-edit"></i>
+            </a>
+            <!-- ゴミ箱リンク -->
+            <button class="delete-btn">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
